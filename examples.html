@@ -1,0 +1,357 @@
+<html>
+<head>
+<title> FAU  </title>
+
+<link href="css/style.css" type="text/css" rel="stylesheet">
+
+</head>
+<style>
+body { background-color: #FFFFFF 
+
+}
+</style>
+<body>
+
+<div class="top">
+<div>
+Contact Us 561.297.3000  | www.fau.edu
+</div>
+</div>
+
+<div class="logo">
+<div>
+<table>
+<tr>
+<td width="600px" style="font-size:50px;font-family:forte;"> <font color="#003366"> FAU  
+</font><font color="#000" font size="+2"> Florida Atlantic University </font> </td>
+<td> <br> <br>
+<font size="4px">
+<a href="index.html">HOME</a>
+<a href="LOGIC.html">LOGIC</a>
+<a href="syntax.html">SYNTAX</a>
+<a href="examples.html">EXAMPLES</a>
+
+</font>
+</td>
+</tr>
+</table>
+</div>
+</div>
+	
+	
+	
+	
+	<div class="bottom">
+		<div>
+			<table border="0">
+				<tr>
+					<td width="700px">
+						<font color="#000">  </font> <br> <br>
+
+					<font color="#000" size="6px">  
+
+
+
+
+<div class="bottom">
+<div>
+<table border="0">
+<tr>
+<td width="700px">
+
+<h1 >EXAMPLES: </h1>
+  
+              <p>LETS LOOK AT THE FOLLOWING PROGRAMS! </p>
+              </div>
+            </div>
+ 
+
+      
+
+<div class="mi">
+<div style="background-image:url('img/r.jpg');">
+<p> </div> </div>
+<br> <br>
+  <br>
+<font size="5px"> <p> </font>
+
+<mark>Example 1 - C hello world program </mark><br> <br>
+/** My first C program */ <br>
+
+#include <stdio.h> <br>
+ 
+int main() <br>
+{<br>
+  printf("Hello World\n");<br>
+  return 0;<br>
+}<br><br><br>
+<mark>Example 2 - C program to get input from a user using scanf </mark><br><br>
+
+#include <stdio.h>
+ <br>
+int main()<br>
+{<br>
+  int x;<br>
+ 
+  printf("Input an integer\n");<br>
+  scanf("%d", &x); // %d is used for an integer<br>
+ 
+  printf("The integer is: %d\n", x);<br>
+ 
+  return 0;<br>
+}<br><br>
+Output:<br>
+Input an integer<br>
+7897<br>
+The integer is: 7897<br><br><br>
+
+<mark>Example 3 - using if else control instructions </mark><br><br>
+
+#include <stdio.h><br>
+ 
+int main()<br>
+{<br>
+   int x = 1;<br>
+ 
+   if (x == 1)<br>
+      printf("x is equal to one.\n");<br>
+   else<br>
+      printf("For comparison use '==' as '=' is the assignment operator.\n");<br>
+ 
+   return 0;<br>
+}<br><br>
+Output:<br>
+x is equal to one. <br> <br><br>
+
+<mark>Example 4 - while loop example </mark><br><br>
+
+#include <stdio.h> <br>
+ 
+int main() <br>
+{ <br>
+  int c = 1;  // Initializing variable<br>
+ 
+  while (c <= 10)  // While loop will execute till the condition is true <br>
+  {<br>
+    printf("%d ", c);  // Note the space after %d for gap in the numbers we want in output<br>
+    c++;<br>
+  }<br>
+ 
+  return 0;<br>
+}<br><br>
+Output:<br>
+1 2 3 4 5 6 7 8 9 10<br><br><br>
+
+<mark>Example 5 - C program check if an integer is prime or not </mark><br><br>
+
+#include <stdio.h><br>
+ 
+int main()<br>
+{<br>
+  int n, c;<br>
+ 
+  printf("Enter a number\n");<br>
+  scanf("%d", &n);<br>
+ 
+  if (n == 2)<br>
+    printf("Prime number.\n");<br>
+  else<br>
+  {<br>
+    for (c = 2; c <= n - 1; c++)<br>
+    {<br>
+      if (n % c == 0)<br>
+        break;<br>
+    }<br>
+    if (c != n)<br>
+      printf("Not prime.\n");<br>
+     else<br>
+       printf("Prime number.\n");<br>
+  }<br>
+  return 0;<br>
+}<br><br><br>
+<mark>Example 6 - command line arguments </mark><br><br>
+
+#include <stdio.h><br>
+ 
+int main(int argc, char *argv[])<br>
+{<br>
+  int c;
+ <br>
+  printf("Number of command line arguments passed: %d\n", argc);<br>
+ 
+  for (c = 0; c < argc; c++)<br>
+    printf("%d argument is %s\n", c + 1, argv[c]);<br>
+ 
+  return 0;<br>
+}<br><br>
+This program prints the number of arguments passed, and the arguments which are passed to it.<br><br><br>
+
+<mark>Example 7 - Array program </mark><br><br>
+
+#include <stdio.h><br>
+ 
+int main()<br>
+{<br>
+    int array[100], n, c;<br>
+   
+    printf("Enter number of elements in array\n");<br>
+    scanf("%d", &n);<br>
+   
+    printf("Enter %d elements\n", n);<br>
+   
+    for (c = 0; c < n; c++)<br>
+        scanf("%d", &array[c]);<br>
+   
+    printf("The array elements are:\n");<br>
+   
+    for (c = 0; c < n; c++)<br>
+        printf("%d\n", array[c]);<br>
+   
+    return 0;<br>
+}<br><br><br>
+<mark>Example 8 - function program</mark><br><br>
+
+#include <stdio.h><br>
+ 
+void my_function();  // Declaring a function<br>
+ 
+int main()<br>
+{<br>
+  printf("Main function.\n");<br>
+ 
+  my_function();  // Calling the function <br>
+ 
+  printf("Back in function main.\n"); <br>
+ 
+  return 0;<br>
+}<br>
+ 
+// Defining the function<br>
+void my_function()<br>
+{<br>
+  printf("Welcome to my function. Feel at home.\n");<br>
+}<br><br><br><mark>
+Example 9 - Using comments in a program </mark><br><br>
+
+#include <stdio.h><br>
+ 
+int main()<br>
+{<br>
+   // Single line comment in a C program<br>
+ 
+   printf("Writing comments is very useful.\n");<br>
+ 
+   /*<br>
+    * Multi-line comment syntax<br>
+    * Comments help us to understand program later easily.<br>
+    * Will you write comments while writing programs?<br>
+    */<br>
+ 
+   printf("Good luck C programmer.\n");<br>
+ 
+   return 0;<br>
+}<br><br><br>
+<mark>Example 10 - using structures in C programming</mark><br><br>
+
+#include <stdio.h><br>
+#include <string.h><br>
+ 
+struct game<br>
+{<br>
+  char game_name[50];<br>
+  int number_of_players;<br>
+};  // Note the semicolon<br>
+ 
+int main()<br>
+{<br>
+  struct game g;<br>
+ 
+  strcpy(g.game_name, "Cricket");<br>
+  g.number_of_players = 11;<br>
+ 
+  printf("Name of game: %s\n", g.game_name);<br>
+  printf("Number of players: %d\n", g.number_of_players);<br>
+ 
+  return 0;<br>
+}<br><br><br>
+ <mark> Example 11 - C program for Fibonacci series </mark> <br><br>
+
+#include <stdio.h><br>
+ 
+int main()<br>
+{<br>
+  int n, first = 0, second = 1, next, c;<br>
+ 
+  printf("Enter the number of terms\n");<br>
+  scanf("%d", &n);<br>
+ 
+  printf("First %d terms of Fibonacci series are:\n", n); <br>
+ 
+  for (c = 0; c < n; c++)<br>
+  {<br>
+    if (c <= 1)<br>
+      next = c;<br>
+    else<br>
+    {<br>
+      next = first + second;<br>
+      first = second;<br>
+      second = next;<br>
+    }<br>
+    printf("%d\n", next);<br>
+  }<br>
+ 
+  return 0;<br>
+}<br>
+
+</div>
+</div>
+
+<div class="bottom">
+<div>
+<table border="0">
+<tr>
+<td width="700px">
+
+
+<td> </td>
+</tr>
+
+
+</table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+     
+
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+					
+
+<br>
+<br>
+<br>
+ 
+	
+	<div class="nav_down">
+
+</div>
+
+	

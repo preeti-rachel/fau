@@ -1,0 +1,363 @@
+<html>
+<head>
+<title> FAU  </title>
+
+<link href="css/style.css" type="text/css" rel="stylesheet">
+
+</head>
+<style>
+body { background-color: #FFFFFF 
+
+}
+</style>
+<body>
+
+<div class="top">
+<div>
+Contact Us 561.297.3000  | www.fau.edu
+</div>
+</div>
+
+<div class="logo">
+<div>
+<table>
+<tr>
+<td width="600px" style="font-size:50px;font-family:forte;"> <font color="#003366"> FAU  </font><font color="#000" font size="+2"> Florida Atlantic University </font> </td>
+<td> <br> <br>
+<font size="4px">
+
+<a href="index.html">HOME</a>
+<a href="LOGIC.html">LOGIC</a>
+<a href="syntax.html">SYNTAX</a>
+<a href="examples.html">EXAMPLES</a>
+
+</font>
+
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+
+
+<div class="bottom">
+<div>
+<table border="0">
+<tr>
+<td width="700px">
+<font color="#000"> We must first understand the basic data types, operators , functions ans such to learn to program efficiently in C </font> <br> <br>
+
+<font color="#000" size="6px"> DATA TYPES:  </font> <br> <br>
+
+</br>
+<img src="img/dtt.png" width="700px"> </br> </br> </br>
+</br> 
+<ul>
+<li> int 
+<p> Integers are whole numbers that can have both zero, positive and negative values but no decimal values. For example, 0, -5, 10
+
+</br>
+</br>
+<img src="img/int.png" width="600px">
+</br>
+</br></br>
+<li> float and double
+<p>
+float and double are used to hold real numbers.
+
+</br> </br></br>
+ <mark> Size and range of Integer type on 16-bit machine </mark> </br> </br>
+
+Type </br> </br>
+
+Size(bytes) </br> </br>
+
+Range</br> </br>
+
+Float</br>
+
+4</br>
+
+3.4E-38 to 3.4E+38</br> </br>
+
+double</br>
+
+8</br> 
+
+1.7E-308 to 1.7E+308 </br> </br>
+
+long double </br> 
+10 </br>
+
+3.4E-4932 to 1.1E+4932  </br>
+</br></br></br> 
+<li> char
+<p>Keyword char is used for declaring character type variables. 
+</br> </br>
+eg. char t='j';
+</br> </br> </br>
+
+<li> void
+<p>
+void is an incomplete type. It means "nothing" or "no type". You can think of void as absent.
+</br>
+For example, if a function is not returning anything, its return type should be void.</br> </br>
+
+Note that, you cannot create variables of void type. </br> </br>
+
+
+
+<li> short and long
+<p>If you need to use a large number, you can use a type specifier long.
+
+ </br> </br> 
+long a; </br>
+long long b; </br>
+long double c; </br> </br> </br>
+<li> signed and unsigned
+<p>
+ In C, signed and unsigned are type modifiers. You can alter the data storage of a data type by using them. 
+</br>
+</br>
+unsigned int x; </br>
+int y; </br>
+</ul>
+<br><br>
+
+<br>
+</td>
+
+
+
+</tr>
+
+
+</table>
+</div>
+</div>
+
+
+<div class="bottom">
+<div>
+<table border="0">
+<tr>
+<td width="700px">
+<font color="#000" size="6px"> VARIABLES:  </font> <br> <br>
+
+</br>
+A variable is nothing but a name given to a storage area that our programs can manipulate. Each variable in C has a specific type, which determines the size 
+and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.
+
+The name of a variable can be composed of letters, digits, and the underscore character. 
+It must begin with either a letter or an underscore. Upper and lowercase letters are distinct because C is case-sensitive.
+</br> 
+<ul>
+<li> Variable Definition in C 
+<p>A variable definition tells the compiler where and how much storage to create for the variable. 
+
+</br>
+</br>
+int    i, j, k; </br>
+char   c, ch; </br>
+float  f, salary; </b>
+double d; </br> </br> </br>
+
+</br>
+</br></br>
+<li> Variable Declaration in C
+<p>
+A variable declaration provides assurance to the compiler that there exists a variable with the 
+given type and name so that the compiler can proceed for further compilation without requiring the complete detail about the variable.
+ A variable definition has its meaning at the time of compilation only, the compiler needs actual variable definition at the time of linking the program.
+
+A variable declaration is useful when you are using multiple files and you define your variable in one of the files which will be available at the time of linking of the program. You will use the keyword extern to declare a variable at any place. Though you can declare a variable multiple times in your C program, it can be defined only once in a file, a function, or a block of code
+
+</br> </br></br>
+EXAMPLE: 
+</br> </br>
+ #include <stdio.h> </br> </br>
+
+// Variable declaration: </br> </br>
+extern int a, b; </br>
+extern int c;</br>
+extern float f;</br>
+</br>
+int main () {</br> </br>
+
+   /* variable definition: */</br>
+   int a, b; </br>
+   int c;</br>
+   float f;</br>
+ </br>
+   /* actual initialization */</br></br>
+   a = 10;</br>
+   b = 20;</br>
+  
+   c = a + b;</br>
+  printf("value of c : %d \n", c);</br></br>
+
+   f = 70.0/3.0;</br>
+   printf("value of f : %f \n", f);</br></br>
+ 
+   return 0; </br> </br>
+}</br></br> </font>
+</ul>
+<br><br>
+
+<br>
+</td>
+
+
+
+</tr>
+
+
+</table>
+</div>
+</div>
+
+
+
+
+
+<div class="bottom">
+<div>
+<table border="0">
+<tr>
+<td width="700px">
+<font color="#000" size="6px"> OPERATORS:  </font> <br> <br>
+
+</br>
+An operator is a symbol that tells the compiler to perform specific mathematica
+l or logical functions. C language is rich in built-in operators and provides the following types of operators -
+</br> </br>
+<li>Arithmetic Operators </br>
+<li>Relational Operators</br>
+<li>Logical Operators</br>
+<li>Bitwise Operators</br>
+<li>Assignment Operators</br>
+<li>Misc Operators</br>
+<ul> <br> </br>
+</br> 
+<img src="img/int.png" width="600px"> </br> </br>
+<li> Arithmetic Operators 
+<p>The following table shows all the arithmetic operators supported by the C language. 
+
+</br>
+</br> <img src="img/ao.jpg" width="600px"> </br> </br>
+
+
+<li> Logical Operators
+<p>
+A variable declaration provides assurance to the compiler that there exists a variable with the 
+given type and name so that the compiler can proceed for further compilation without requiring the complete detail about the variable.
+ A variable definition has its meaning at the time of compilation only, the compiler needs actual variable definition at the time of linking the program.
+
+A variable declaration is useful when you are using multiple files and you define your variable in one of the files which will be available at the time of linking of the program. You will use the keyword extern to declare a variable at any place. Though you can declare a variable multiple times in your C program, it can be defined only once in a file, a function, or a block of code
+
+</br> </br></br>
+EXAMPLE: 
+</br> </br>
+ #include <stdio.h> </br> </br>
+
+// Variable declaration: </br> </br>
+extern int a, b; </br>
+extern int c;</br>
+extern float f;</br>
+</br>
+int main () {</br> </br>
+
+   /* variable definition: */</br>
+   int a, b; </br>
+   int c;</br>
+   float f;</br>
+ </br>
+   /* actual initialization */</br></br>
+   a = 10;</br>
+   b = 20;</br>
+  
+   c = a + b;</br>
+  printf("value of c : %d \n", c);</br></br>
+
+   f = 70.0/3.0;</br>
+   printf("value of f : %f \n", f);</br></br>
+ 
+   return 0; </br> </br>
+}</br></br> </font>
+</ul>
+<br><br>
+
+<br>
+</td>
+
+
+
+</tr>
+
+
+</table>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bottom">
+<div>
+<table border="0">
+<tr>
+<td width="700px">
+<font color="#000"> EXAMPLE : </font> <br> <br>
+
+<font color="#000" size="6px"> TYPE YOUR OWN PROGRAM TO FIND THE SIZES OF THE DATA TYPES ! </font> <br> <br>
+
+<ul>
+<li> Here we will use an in built function sizeof() to find the number of bytes in a data type </br></br></br>
+#include <stdio.h> </br>      
+int main() { </br>
+  short a;</br>
+  long b;</br>
+  long long c;</br>
+  long double d;</br>
+  printf("size of short = %d bytes\n", sizeof(a));</br>
+  printf("size of long = %d bytes\n", sizeof(b));</br>
+  printf("size of long long = %d bytes\n", sizeof(c));</br>
+  printf("size of long double= %d bytes\n", sizeof(d));</br>
+  return 0;</br>
+} </br> </br> </br>
+</ul> 
+
+
+<br>
+</td>
+
+
+<td style="padding-left:20px;"> </td>
+</tr>
+
+
+</table>
+</div>
+</div>
+
+
+<div class="nav_down">
+<div>
+
+
+&copy; Learn C the easy way, site designed & developed by PREETI_RACHEL
+</div>
+</div>
